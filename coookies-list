@@ -1,0 +1,17 @@
+userid======hafhk43
+userpic------nbie09
+temp_user------?fdgirt3
+session for setname  ------------->asfdfdg
+ session for set field---------->asfsfbs
+
+ $c = new McryptCipher('passKey');
+$decrypted = $c->decrypt($encrypted);
+$encrypted = $c->encrypt('secret message');
+bresdss:Local storage where questions and all data is stored
+dijfnj::temprorary host code
+sdlfue43----------->temprorary code to identify if he or she is admin of multilayer quiz
+
+
+Where /quizProjetc are used
+In handle/session-cookie_check.php,,handle/afterlog.php;  handle/mail.php
+in Htaccess

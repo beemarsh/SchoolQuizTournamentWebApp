@@ -1,0 +1,181 @@
+
+body{
+  margin:0px;
+  padding: 0px;
+  background: white;
+  scroll-behavior: smooth;
+}
+#cover{
+  background: #000000d6;
+  width: 100%;
+  height:100%;
+  position: fixed;
+  top: 0;
+  left:0;
+  right:0;
+  bottom: 0;
+}
+.headtext{
+  font: 35px Robotothin;
+  margin: 3px;
+}
+.butt{  
+    max-width: max-content;
+   background: #f1c40f;
+    border: none;
+    font: 15px poppins;
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+    border-radius:5px;
+    border-bottom:  5px solid #cea709 ;
+    transition: 1s;
+}
+.butt:hover, .butt:active {
+     border-bottom:  0.5px;
+}
+.addQuizSetButt , .manageQSbutt,.addQbutt, .addQsubmitButt, .doneAddQSbutt {
+  border-bottom:  5px solid #15B358 ;
+  background: #2ecc71;
+}
+.removeThisQSbutt, .removeQbutt {
+  border-bottom:  5px solid #CE3323 ;
+  background: #e74c3c;
+}
+ .editQbutt{
+  background: #55acee;
+  border-bottom-color: #3C93D5;
+}
+.viewQSbutt{
+  background: #446CB3;
+  border-bottom-color: #3b5998;
+}
+/* Buttons End here --------------------------------------------------------*/
+.Main-container{
+  margin: 5px;
+  padding: 10px;
+}
+.Main-container > ul{
+  display: flex;
+  flex-wrap: wrap; 
+}
+.Main-container > ul > li{
+  list-style: none;
+  font: 18px raleway;
+  padding: 10px;
+  margin: 10px 10px 10px 0px;
+  max-width: 320px;
+  border-radius: 3px;
+  min-height: 100px;
+  background: #ff9b44;
+  background: -webkit-gradient(left top,right top,color-stop(0,#ff9b44),color-stop(100%,#fc6075));
+  background: linear-gradient(to right,#ff9b44 0,#fc6075 100%);
+  box-shadow: 0 0 10px 0 #fc6075;
+  cursor:pointer;
+}
+.set-name{
+  font-weight: bolder;
+  font-size: 28px;
+}
+.Main-container > ul> li> div{
+  display: flex;
+  flex-flow: column;
+  flex-wrap: wrap;
+  padding: 2px;
+  width: 300px;
+}
+.Main-container > ul> li> div > *{
+  margin: 5px;
+}
+.manageQSbutt {
+  margin-left:auto;
+}
+.Main-container .addQbutt{
+  margin: 10px; 
+}
+/*------------------------------------------------------------------------*/
+#manageQS-contain{
+  margin-left: 40px;
+}
+#manageQS-contain >ul{
+  margin: 0px;
+}
+#manageQS-contain > ul >li {
+  list-style: none;
+  font:18px arial;
+  margin:10px 0px;
+  padding:10px;
+  display: flex;
+  width: 85vw;
+ flex-wrap: wrap;
+}
+#manageQS-contain > ul >li> div{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 15px;
+  width: 70vw;
+}
+#manageQS-contain > ul >li> div>span{
+  display: block;
+}
+.editQbutt, .removeQbutt{
+  margin:0px 5px;
+  
+}
+
+#manageQS-contain > ul> li:nth-child(odd){
+  background: lightgrey;
+}
+#manageQS-contain > ul> li:nth-child(even){
+  background: whitesmoke;
+}
+/* ---------------------------------------------------------------------------------- */
+/* #formAddQS{
+  position: fixed;
+  top:0;
+  left:0;
+  bottom: 0;
+  right:0;
+  height:400px;
+  width: min-content;
+  margin: auto;
+  background: whitesmoke;
+  padding: 20px;
+  font: 20px Passionone;
+  letter-spacing: 2px;
+}
+#formAddQS > input{
+  margin: 10px 0px;
+  width: 40vw;
+  min-width: 150px;
+  font: 18px arial;
+  border: none;
+  border-bottom: 2px solid skyblue;
+  padding: 10px;
+}
+#formAddQS > select{
+  padding: 10px;
+  font: 15px poppins;
+}
+.close-section{
+  border-radius: 100%;
+  color: tomato;
+  font-size: 20px;
+  float: right;
+  cursor:pointer;
+}
+
+.errorMsgForm{
+  display: none;
+  padding: 10px;
+  font: 15px calibri;
+  background: lightcoral;
+  width:90%;
+  margin-top: 20px;
+  border-radius: 5px;
+  margin-right: 20px;
+} */
+/* --------Display None Section--------------------------------------------------------*/
+#manageQS-contain, #cover{
+  display: none;
+}

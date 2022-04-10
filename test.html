@@ -1,0 +1,66 @@
+<div class="fields-container" id='chooseQuiz'>
+
+    <h1>
+            Choose the Field You For Multiplayers Quiz Battle
+        </h1>
+        <div>
+        <ul class="btns-container">
+            <li class="btns "> 
+                    <div class="field-icon"><img src="./refrences/extras/chemistry.png" alt="Icon"> </div>
+                    <span>Science</span>
+                </li>
+                <li class="btns "> 
+                    <div class="field-icon"><img src="./refrences/extras/worldwide.png" alt="Icon"></div>
+                    <span>Geography</span>
+                </li>
+                <li class="btns "> 
+                    <div class="field-icon"><img src="./refrences/extras/history.png" alt="Icon"></div>
+                    <span>History</span>
+                </li>
+                <li class="btns "> 
+                    <div class="field-icon"><img src="./refrences/extras/book.png" alt="Icon"></div>
+                    <span>Literature</span>
+                </li>
+                <li class="btns "> 
+                    <div class="field-icon"><img src="./refrences/extras/quiz.png" alt="Icon"></div>
+                    <span>Mixed</span>
+                </li>
+            </ul>
+        </div>
+        <div class="done-bttn green-butt">Thats it!</div>
+        <div id=cover >
+            <div class="cover-container">
+                <div class="cover-hero">
+            <form class=pop-box onsubmit='return playomniquiz()'>
+                <span class="pop-head"> Start Searching Players</span>
+                <label> 
+                     <input type="hidden" name="field_select">
+                     <p><span> Fields:</span> <span id='field_select'> </span></p> 
+                </label>
+                <label>
+                    <p><span> Difficulty Level</span> 
+                    <span> <select name=level id='level_select'> 
+                    <option value=easy> Easy </option>
+                    <option value=medium> Medium </option>
+                    <option value=hard> Hard </option>
+                     </select></span></p>
+                </label>
+                <label>
+                    <p><span> No. of questions:</span>
+                     <span> <input type=number max=50 min=1 name=no value=5 id='num_select'></span></p>
+                </label>
+                <label>
+                    <p><span> Duration for each question:</span> <span id="duration"></span></p>
+                </label>
+                <label style="width:100%;">
+                    <button class='butt green-butt' type='submit'>Submit</button>
+                </label>
+                    <div id="cancel-butt" class="pop-close">
+                        X
+                <!-- <i class="fas fa-times"></i> -->
+            </div>
+            </form>
+        </div>
+        </div>
+        </div>
+        </div>

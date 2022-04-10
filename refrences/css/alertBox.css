@@ -1,0 +1,42 @@
+
+  /* =========================================================================== */
+  .alert-container{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-items:center;
+    z-index: 20;
+    background: rgba(0, 0, 0, 0.2);
+  
+  }
+  .alert-box{
+    width: 350px;
+    max-width: 100vw;
+    background: #fffcf9 ;
+    display: flex;
+    flex-flow: column ;
+    padding: 20px;
+    align-items: center;
+    border-radius: 3px;
+  }
+  .alert-box > span{
+    font: 17px  cabin;
+    /* font-weight: bolder; */
+    color: black;
+    margin: 10px 0 ;
+  }
+  .alert-button{
+    max-width: 50%;
+    padding: 10px 30px;
+    font: 17px raleway;
+    background: #008cff;
+    box-shadow: 0 0 10px 0 #008cff;
+    border: none;
+    font-weight: bolder;
+    color: white;
+    border-radius: 3px;
+    margin: 20px 0;
+    cursor: pointer;
+  }

@@ -1,0 +1,201 @@
+/*------------------------------------------------------------------------*/
+#manageQS-contain{
+    margin-left: 40px;
+  }
+  #manageQS-contain >ul{
+    margin: 0px;
+  }
+  #manageQS-contain > ul >li {
+    list-style: none;
+    font:18px arial;
+    margin:10px 0px;
+    padding:10px;
+    display: flex;
+    width: 85vw;
+   flex-wrap: wrap;
+  }
+  #manageQS-contain > ul >li> div{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 15px;
+    width: 70vw;
+  }
+  #manageQS-contain > ul >li> div>span{
+    display: block;
+  }
+  .editQbutt, .removeQbutt{
+    margin:0px 5px;
+    
+  }
+  
+  #manageQS-contain > ul> li:nth-child(odd){
+    background: lightgrey;
+  }
+  #manageQS-contain > ul> li:nth-child(even){
+    background: whitesmoke;
+  }
+  /*----------------------------------------------------------------------------------*/
+  /* form{
+    position: fixed;
+    top:0;
+    left:0;
+    bottom: 0;
+    right:0;
+    height:400px;
+    width: min-content;
+    margin: auto;
+    background: whitesmoke;
+    padding: 20px;
+    font: 20px Passionone;
+    letter-spacing: 2px;
+  }
+  form > input{
+    margin: 10px 0px;
+    width: 40vw;
+    min-width: 150px;
+    font: 18px arial;
+    border: none;
+    border-bottom: 2px solid skyblue;
+    padding: 10px;
+  }
+  form > select{
+    padding: 10px;
+    font: 15px poppins;
+  }
+  .close-section{
+    border-radius: 100%;
+    color: tomato;
+    font-size: 20px;
+    float: right;
+    cursor:pointer;
+  }
+  
+  .errorMsgForm{
+    display: none;
+    padding: 10px;
+    font: 15px calibri;
+    background: lightcoral;
+    width:90%;
+    margin-top: 20px;
+    border-radius: 5px;
+    margin-right: 20px;
+  } */
+/* ---------------------------------------------------------------------------------------- */
+  button, .butt{  
+    max-width: max-content;
+   background: #f1c40f;
+    border: none;
+    font: 15px poppins;
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+    border-radius:5px;
+    border-bottom:  5px solid #cea709 ;
+    transition: 1s;
+}
+button:hover, button:active {
+     border-bottom:  0.5px;
+}
+.addQuizSetButt , .addQbutt, .addQsubmitButt, .doneAddQSbutt {
+  border-bottom:  5px solid #15B358 ;
+  background: #2ecc71;
+}
+.removeThisQSbutt, .removeQbutt {
+  border-bottom:  5px solid #CE3323 ;
+  background: #e74c3c;
+}
+.manageQSbutt, .editQbutt{
+  background: #55acee;
+  border-bottom-color: #3C93D5;
+}
+#cover{
+    background: #000000d6;
+    width: 100%;
+    height:100%;
+    position: fixed;
+    top: 0;
+    left:0;
+    right:0;
+    bottom: 0;
+  }
+  
+body{
+    margin:0px;
+    padding: 0px;
+    background: white;
+    scroll-behavior: smooth;
+  }
+  .headtext{
+    font: 35px robotothin;
+    letter-spacing: 2px;
+  }
+  /* ------------------------------------------- */
+/* #formConfirmBox {
+  width: 200px;
+  height: 200px;
+  padding: 5px;
+  text-align: center;
+  display:none;
+}
+#formConfirmBox  * {
+  margin-top: 30px;
+  text-decoration:none;
+}
+#formConfirmBox > span {
+  width: 100%;
+  display: block;
+}
+#formConfirmBox .butt {
+  min-width: 72px;
+  float:left;
+} */
+/* ------------------------------------------- */
+.helptxt{
+  margin-top:50px ; 
+  padding: 10px;
+  font: 15px calibri;
+  background: lightsteelblue;
+  position: relative;
+  border-radius: 5px;
+  
+}
+.helptxt:before{
+  content:"+";
+  font: 18px poppins;
+  color: royalblue;
+  position: absolute;
+  top:-12px;
+  left:-5px;
+}
+base {
+  height:50px;
+  width: 50px;
+  background: blue;
+}
+.all-questions{
+  display: flex;
+  flex-wrap: wrap;
+}
+.a-question{
+  padding: 10px;
+  background: white;
+  border-radius: 3px;
+  display: flex;
+  flex-flow: column;
+  margin: 5px;
+  max-width: 90%;
+  width:300px;
+}
+.a-question > *{
+  margin: 10px;
+}
+.a-question .que{
+  font: 20px raleway;
+  
+}
+.a-question span{
+  font: 18px quicksand;
+}
+#cover, #formAddQ , #formConfirmBox {
+  display: none;
+}

@@ -1,0 +1,210 @@
+<html>
+    <head>
+        <link rel=stylesheet href="refrences/fonts/fonts.css">
+
+        <style>
+
+            body{
+   background-color:#E56262;
+}
+.loader-frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  background: #E56262;
+  color: #fff;
+}
+
+.loader-center {
+  position: absolute;
+  width: 220px;
+  height: 220px;
+  top: 90px;
+  left: 90px;
+}
+
+.loader-dot-1 {
+  position: absolute;
+  z-index: 3;
+  width: 30px;
+  height: 30px;
+  top: 95px;
+  left: 95px;
+  background: #FD3359;
+  border-radius: 50%;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation: jump-jump-1 2s cubic-bezier(0.21, 0.98, 0.6, 0.99) infinite alternate;
+          animation: jump-jump-1 2s cubic-bezier(0.21, 0.98, 0.6, 0.99) infinite alternate;
+}
+
+.loader-dot-2 {
+  position: absolute;
+  z-index: 2;
+  width: 60px;
+  height: 60px;
+  top: 80px;
+  left: 80px;
+  background: #21BDFF;
+  border-radius: 50%;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation: jump-jump-2 2s cubic-bezier(0.21, 0.98, 0.6, 0.99) infinite alternate;
+          animation: jump-jump-2 2s cubic-bezier(0.21, 0.98, 0.6, 0.99) infinite alternate;
+}
+
+.loader-dot-3 {
+  position: absolute;
+  z-index: 1;
+  width: 90px;
+  height: 90px;
+  top: 65px;
+  left: 65px;
+  background: #F4D302;
+  border-radius: 50%;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation: jump-jump-3 2s cubic-bezier(0.21, 0.98, 0.6, 0.99) infinite alternate;
+          animation: jump-jump-3 2s cubic-bezier(0.21, 0.98, 0.6, 0.99) infinite alternate;
+}
+
+@-webkit-keyframes jump-jump-1 {
+  0%, 70% {
+    box-shadow: 2px 2px 3px 2px rgba(0, 0, 0, 0.2);
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  100% {
+    box-shadow: 10px 10px 15px 0 rgba(0, 0, 0, 0.3);
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes jump-jump-1 {
+  0%, 70% {
+    box-shadow: 2px 2px 3px 2px rgba(0, 0, 0, 0.2);
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  100% {
+    box-shadow: 10px 10px 15px 0 rgba(0, 0, 0, 0.3);
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@-webkit-keyframes jump-jump-2 {
+  0%, 40% {
+    box-shadow: 2px 2px 3px 2px rgba(0, 0, 0, 0.2);
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  100% {
+    box-shadow: 10px 10px 15px 0 rgba(0, 0, 0, 0.3);
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@keyframes jump-jump-2 {
+  0%, 40% {
+    box-shadow: 2px 2px 3px 2px rgba(0, 0, 0, 0.2);
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  100% {
+    box-shadow: 10px 10px 15px 0 rgba(0, 0, 0, 0.3);
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@-webkit-keyframes jump-jump-3 {
+  0%, 10% {
+    box-shadow: 2px 2px 3px 2px rgba(0, 0, 0, 0.2);
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  100% {
+    box-shadow: 10px 10px 15px 0 rgba(0, 0, 0, 0.3);
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@keyframes jump-jump-3 {
+  0%, 10% {
+    box-shadow: 2px 2px 3px 2px rgba(0, 0, 0, 0.2);
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  100% {
+    box-shadow: 10px 10px 15px 0 rgba(0, 0, 0, 0.3);
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+/* =========================================================================== */
+.alert-container{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  z-index: 20;
+  background: rgba(0, 0, 0, 0.2);
+
+}
+.alert-box{
+  width: 350px;
+  max-width: 100vw;
+  background: #fffcf9 ;
+  display: flex;
+  flex-flow: column ;
+  padding: 20px;
+  align-items: center;
+  border-radius: 3px;
+}
+.alert-box > span{
+  font: 17px  cabin;
+  /* font-weight: bolder; */
+  color: black;
+  margin: 10px 0 ;
+}
+.alert-button{
+  max-width: 50%;
+  padding: 10px 30px;
+  font: 17px raleway;
+  background: #008cff;
+  box-shadow: 0 0 10px 0 #008cff;
+  border: none;
+  font-weight: bolder;
+  color: white;
+  border-radius: 3px;
+  margin: 20px 0;
+  cursor: pointer;
+}
+</style>
+    </head>
+    <body>
+        <div class="loader-frame">
+            <div class="loader-center">
+               <div class="loader-dot-1"></div>
+               <div class="loader-dot-2"></div>
+               <div class="loader-dot-3"></div>
+            </div>
+         </div>
+
+
+         <!-- ==------------------------------------------- -->
+         <div class="alert-container">
+           <div class="alert-box">
+            <SPAN> The longgg lorem ipsum text goes here !!!</SPAN>
+            <button class="alert-button"> Okay </button>
+           </div> 
+         </div>
+    </body>
+</html>
